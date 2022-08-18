@@ -45,7 +45,19 @@
    img{
       display: block;
    }
-   
+
+   .section-title.unimportland{
+      position: absolute;
+      white-space: nowrap;
+      width: 1px;
+      overflow: hidden;
+      border: 0;
+      padding: 0px;
+      height: 0px;
+      clip-path: inset(50%);
+      margin: -1;
+   }
+
    
    body{
       font-family:Roboto, sans-serif; 
@@ -57,6 +69,9 @@
     /* логотип */
    
    .logo{
+      padding-top: 24px;
+      padding-bottom: 24px;
+      margin-right: 93px;
 
        color: var(--logo-color);
        font-family: Raleway, cursive;
@@ -86,6 +101,7 @@
    .container{
       max-width: 1200px;
       width: 100%;
+      margin: 0;
       margin-left: auto;
       margin-right: auto;
       padding-left: 15px;
@@ -93,6 +109,7 @@
 
 
    }
+
 
    .section{
       padding-top: 94px;
@@ -106,17 +123,27 @@
        /* display: flex;
       align-items: center;
       justify-content: space-between; */ 
+      border-bottom: solid;
       background-color: var(--main-background);
    }
 
    .site-nav ,
    .contact-nav{
+      padding: 10px;
       display: flex;
    }
-
-/* .link{
-   display: block;
-} */
+   
+.header{
+   display: flex;
+   justify-content: space-between;
+   align-items: baseline;
+}
+.nav{
+   display: flex;
+   align-items: center;
+   padding-left: 0px;
+   align-items: baseline;
+}
 
    .site-nav li,
    .contact-nav li{
@@ -136,6 +163,7 @@
 
 
 .site-nav .link{
+   margin-right: 50px;
 
    color: var(--title-text-color);
    font-weight: 500;
@@ -186,6 +214,8 @@
       text-transform: uppercase;
    }
 
+   
+
    .feature-content{
       
       padding-left: 15px;
@@ -198,20 +228,16 @@
       display: flex;
    }
 
-   .text{
-      padding-bottom: 94px;
 
+   .section-title.unimportland{
+      padding-top: 0px;
+      padding-bottom: 0px;
+      color: var(--second-background);
+      margin: -34px;
    }
-   
-  .title{
-
-   padding-top: 94px;
-  }
 
    .section-title {
-     
-      /* padding-top: 94px;
-      padding-bottom: 50px; */
+      padding-bottom: 50px;
 
       color: var(--title-text-color);
       font-weight: 700;
@@ -222,7 +248,6 @@
    }
 
    .work-list{
-      padding-bottom: 94px;
       display: flex;
       justify-content: space-between;
    }
@@ -246,6 +271,10 @@
     }
    
     .second-title{
+      margin-top: 30px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: center;
 
 
       font-weight: 500;
@@ -299,12 +328,12 @@
    }
    
    .btn-sec{
+      margin-bottom: 50px;
       display: flex;
       justify-content: center;
    }
 
    .set-btn{
-      padding-top: 94px;
       margin-left: 8px;
    }
 
@@ -316,6 +345,9 @@
    }
    
    .works{
+     margin-top: 20px;
+     margin-bottom: 4px;
+
       font-weight: 700;
      font-size: 18px;
      line-height: 2;
@@ -328,7 +360,7 @@
       display: flex;
       flex-wrap: wrap;
       gap: 30px;
-      padding-bottom: 94px;
+      
    }
 
 
@@ -336,15 +368,47 @@
       display: flex;
       justify-content: space-between;
    }
-
+    
    .our-team-work{
-      padding-bottom: 124px;
+     padding-bottom: 30px;
+      display: flex;
+      justify-content: center;
    }
+   
+   .our-team-gen{
+      background-color:var(--main-background);
+   }
+
+   .bord{
+      opacity: 0.5;
+      border-color: var(--primary-text-color);
+      border-top: solid 1px;
+      border-bottom:solid 1px;
+      border-left: solid 1px;
+      border-right: solid 1px;
+   }
+
    
    /* футер */
    
    .footer{
+      display: flex;
       background-color: var(--footer-backgraund);
+      padding-top: 60px;
+      padding-bottom: 60px;
+   }
+   
+   .logo-foot{
+
+
+      color: var(--logo-color);
+       font-family: Raleway, cursive;
+       letter-spacing: 0.03em;
+       font-weight: 700;
+       font-size: 26px;
+       line-height: 1.19;
+       text-decoration: none;
+       letter-spacing: 0.02em;
    }
    
    .logo-write{
@@ -360,6 +424,8 @@
    }
    
    .location{
+      display: flex;
+        margin-top: 20px;
          text-decoration: none;
          color: var(--main-background);
          font-style: normal;
@@ -373,10 +439,14 @@
    
 
       .addres{
+         /* max-width: 215px;
+         width: 100%; */
          justify-content: flex-start;
       }
 
-    .addres .link{
+    .addres .link{ 
+      display: flex;
+      margin-top: 9px;
       font-style: normal;
       color: var(--footer-color);
       text-decoration: none;
