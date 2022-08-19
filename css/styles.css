@@ -204,6 +204,8 @@
    
    .hero-title {
       
+      max-width: 696px;
+      width: 100%;
 
       color: var(--main-background);
       font-weight: 900;
@@ -384,7 +386,7 @@
       padding-left: 24px;
       padding-right: 24px;
       border-color: var(--primary-text-color);
-      border-top: solid 1px #EEEEEE;
+      border-top: 0px;
       border-bottom:solid 1px #EEEEEE;
       border-left: solid 1px #EEEEEE;
       border-right: solid 1px #EEEEEE;
@@ -410,7 +412,6 @@
        font-size: 26px;
        line-height: 1.19;
        text-decoration: none;
-       letter-spacing: 0.02em;
    }
    
    .logo-write{
@@ -441,14 +442,17 @@
    
 
       .addres{
-         /* max-width: 215px;
-         width: 100%; */
+         max-width: 215px;
+         width: 100%;
          justify-content: flex-start;
       }
+    
+      
 
     .addres .link{ 
-      display: flex;
       margin-top: 9px;
+
+      display: flex;
       font-style: normal;
       color: var(--footer-color);
       text-decoration: none;
