@@ -463,6 +463,8 @@
    
    .location{
       line-height: 1.7;
+      size: 14px;
+      line-height:24px;
          display: flex;
          margin-top: 20px;
          text-decoration: none;
@@ -488,7 +490,7 @@
 
       display: flex;
       font-style: normal;
-      color: var(--footer-color);
+      color: rgba(255, 255, 255, 0.6);
       text-decoration: none;
       font-size: 14px;
       line-height: 1.7;
@@ -501,5 +503,6 @@
 
       .foot-navi{
          margin-bottom: 9px;
+
       }
    
